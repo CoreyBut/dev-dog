@@ -1,4 +1,8 @@
 # dev-dog
+Corey Butler
+Github submission
+3/13
+
 
 🦭Cumbie CIS 376 Web Dev Spring '25 Midterm Dev Exam
 
