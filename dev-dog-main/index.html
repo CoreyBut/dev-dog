@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html><!-- TODO: 🐶1. I'm missing something here aren't I? -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>seal shell game</title>
+  <!-- TODO: 🐶2. most common meta viewport tag needs to go here, thx! -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <!-- ✅ navbar with burger and logo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Shelly the Seal's Shoe Shell Game
+        <span id="secretSeal">🦭</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+<!-- ↓game controls -->
+<!-- TODO: 🐶3. ugh, I hate the position of these controls. Can they ALWAYS be on the right side of the page, about 1/4 of the page down? (hint: modify via css position)-->
+<div>
+  <button id="reset" class="btn btn-danger">reset game</button><br>
+  <button id="replay" class="btn btn-primary">play again</button><br>
+  <span id="score"></span>
+</div>
+<!-- ↑game controls -->
+
+<!-- ↓game area -->
+<div id="gameArea" class="container text-center border border-5 card">
+  
+  <!-- TODO: 🐶4. help! I can't have any internal or inline style or my boss will flip his lid! -->
+  <div style="height: 350px;" class="row text-center">
+    <h4>help shelly the seal find her sea shells under the shoes</h4>
+    <p id="gameResult">drag shelly to a shoe!</p>
+    <span id="shellySeal">🦭</span>
+  </div>
+
+  <div id="shoeBox" class="row">
+    <!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+    <div id="shoe1" class="shoe"></div>
+    <div id="shoe2" class="shoe"></div>
+    <div id="shoe3" class="shoe"></div>
+  </div>
+</div>
+<!-- ↑game area -->
+
+    </div>
+
+  </div>
+
+  <!-- footer -->
+  <div class="row text-center">
+    <!-- TODO: 🐶5. I need this looking more like a BS5 footer please and thank you! -->
+    <p>footer</p>
+    <!-- TODO: 🐶6. add a link to YOUR github profile-->
+    <!-- TODO: 🐶7. what about a link to the wireframe BUT put it up in the hamburger nav bar area?-->
+  </div>
+
+  <!-- load my script libraries -->
+  <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+  <script src='https://code.jquery.com/ui/1.14.1/jquery-ui.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
+  
+  <script src="scripts/shelly.js"></script>
+
+</body>
+</html>
+
+<!-- TODO: 🐶8. don't forget to Nu test! -->
